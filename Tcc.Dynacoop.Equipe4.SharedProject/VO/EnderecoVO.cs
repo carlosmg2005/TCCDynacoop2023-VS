@@ -24,8 +24,5 @@ namespace Tcc.Dynacoop.Equipe4.SharedProject.VO
 
     public string siafi { get; set; }
 
-    internal class EnderecoVO
-    {
-
-    }
+   
 }
