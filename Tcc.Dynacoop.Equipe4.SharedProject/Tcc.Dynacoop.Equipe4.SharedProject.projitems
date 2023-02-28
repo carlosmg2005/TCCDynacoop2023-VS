@@ -9,5 +9,6 @@
     <Import_RootNamespace>Tcc.Dynacoop.Equipe4.SharedProject</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)VO\EnderecoVO.cs" />
   </ItemGroup>
 </Project>

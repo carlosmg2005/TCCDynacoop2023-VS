@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tcc.Dynacoop2023.Equipe4", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tcc.Dynacoop.Equipe4.Plugin", "Tcc.Dynacoop.Equipe4.Plugin\Tcc.Dynacoop.Equipe4.Plugin.csproj", "{27B54BE2-4738-441E-B5E7-D60C8DC28CB2}"
 EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Tcc.Dynacoop.Equipe4.SharedProject", "Tcc.Dynacoop.Equipe4.SharedProject\Tcc.Dynacoop.Equipe4.SharedProject.shproj", "{E88D578D-020A-44ED-BF1D-9C8C37D680D1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,5 +29,9 @@ Global
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {12D56CE1-0C09-4C73-8267-B621A0D29761}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Tcc.Dynacoop.Equipe4.SharedProject\Tcc.Dynacoop.Equipe4.SharedProject.projitems*{27b54be2-4738-441e-b5e7-d60c8dc28cb2}*SharedItemsImports = 4
+		Tcc.Dynacoop.Equipe4.SharedProject\Tcc.Dynacoop.Equipe4.SharedProject.projitems*{e88d578d-020a-44ed-bf1d-9c8c37d680d1}*SharedItemsImports = 13
 	EndGlobalSection
 EndGlobal
