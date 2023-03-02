@@ -10,6 +10,11 @@ namespace Tcc.Dynacoop.Equipe4.Plugin.Plugins.EnvironmentOne
         ConnectionEnvironmentTwo ambienteDois = new ConnectionEnvironmentTwo();
         public override void ExecutePlugin(IServiceProvider serviceProvider)
         {
+            ClonaProdutoCriadoParaAmbiente2();
+        }
+
+        protected void ClonaProdutoCriadoParaAmbiente2()
+        {
             if (PluginBase.Validate(this.Context, PluginBase.MessageName.Create, PluginBase.Stage.PostOperation, PluginBase.Mode.Asynchronous))
             {
                 try
