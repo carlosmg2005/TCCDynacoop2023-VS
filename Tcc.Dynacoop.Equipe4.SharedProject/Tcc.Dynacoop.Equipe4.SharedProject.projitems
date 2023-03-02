@@ -9,10 +9,11 @@
     <Import_RootNamespace>Tcc.Dynacoop.Equipe4.SharedProject</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Opportunity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Product.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)VO\EnderecoVO.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Controller\" />
-    <Folder Include="$(MSBuildThisFileDirectory)Model\" />
   </ItemGroup>
 </Project>
