@@ -150,6 +150,7 @@
     <Compile Include="DynacoopISV\ActionCore.cs" />
     <Compile Include="DynacoopISV\PluginCore.cs" />
     <Compile Include="Plugins\Connection\ConnectionEnvironmentTwo.cs" />
+    <Compile Include="Plugins\EnvironmentOne\AccountManager.cs" />
     <Compile Include="Plugins\EnvironmentOne\OpportunityManager.cs" />
     <Compile Include="Plugins\EnvironmentOne\ProductManager.cs" />
     <Compile Include="Plugins\PluginBase.cs" />
