@@ -24,7 +24,7 @@ namespace Tcc.Dynacoop.Equipe4.Plugin.Plugins.EnvironmentOne
             var accountFound = accountController.GetAccountByCnpj(cnpj);
             if (accountFound != null)
             {
-                throw new Exception("Cnpj já cadastrado no sistema, por favor, tente novamente!");
+                throw new InvalidPluginExecutionException("Cnpj já cadastrado no sistema, por favor, tente novamente!");
             }
         }
     }
