@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33403.182
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tcc.Dynacoop2023.Equipe4", "Tcc.Dynacoop2023.Equipe4\Tcc.Dynacoop2023.Equipe4.csproj", "{925EE880-09BD-484E-A847-197A34222E4E}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tcc.Dynacoop.Equipe4.Plugin", "Tcc.Dynacoop.Equipe4.Plugin\Tcc.Dynacoop.Equipe4.Plugin.csproj", "{27B54BE2-4738-441E-B5E7-D60C8DC28CB2}"
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Tcc.Dynacoop.Equipe4.SharedProject", "Tcc.Dynacoop.Equipe4.SharedProject\Tcc.Dynacoop.Equipe4.SharedProject.shproj", "{E88D578D-020A-44ED-BF1D-9C8C37D680D1}"
@@ -17,10 +15,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{925EE880-09BD-484E-A847-197A34222E4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{925EE880-09BD-484E-A847-197A34222E4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{925EE880-09BD-484E-A847-197A34222E4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{925EE880-09BD-484E-A847-197A34222E4E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{27B54BE2-4738-441E-B5E7-D60C8DC28CB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{27B54BE2-4738-441E-B5E7-D60C8DC28CB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{27B54BE2-4738-441E-B5E7-D60C8DC28CB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
