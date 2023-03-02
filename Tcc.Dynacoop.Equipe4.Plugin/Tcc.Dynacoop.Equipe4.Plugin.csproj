@@ -74,7 +74,7 @@
     </Reference>
     <Reference Include="Microsoft.Xrm.Tooling.Connector, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CrmSdk.XrmTooling.CoreAssembly.9.1.1.1\lib\net462\Microsoft.Xrm.Tooling.Connector.dll</HintPath>
-      <Private>False</Private>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
@@ -146,9 +146,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Actions\BuscaCEPApi.cs" />
+    <Compile Include="Actions\Request\RequestViaCep.cs" />
     <Compile Include="DynacoopISV\ActionCore.cs" />
     <Compile Include="DynacoopISV\PluginCore.cs" />
-    <Compile Include="Plugins\ProductManager.cs" />
+    <Compile Include="Plugins\Connection\ConnectionEnvironmentTwo.cs" />
+    <Compile Include="Plugins\EnvironmentOne\ProductManager.cs" />
+    <Compile Include="Plugins\PluginBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -156,6 +159,7 @@
     <None Include="KeyFile.snk" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="..\Tcc.Dynacoop.Equipe4.SharedProject\Tcc.Dynacoop.Equipe4.SharedProject.projitems" Label="Shared" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\System.Text.Json.6.0.2\build\System.Text.Json.targets" Condition="Exists('..\packages\System.Text.Json.6.0.2\build\System.Text.Json.targets')" />

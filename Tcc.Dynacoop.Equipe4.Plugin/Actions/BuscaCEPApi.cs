@@ -3,10 +3,6 @@ using Newtonsoft.Json;
 using RestSharp;
 using System;
 using System.Activities;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Tcc.Dynacoop.Equipe4.Plugin.DynacoopISV;
 using Tcc.Dynacoop.Equipe4.SharedProject.VO;
 
