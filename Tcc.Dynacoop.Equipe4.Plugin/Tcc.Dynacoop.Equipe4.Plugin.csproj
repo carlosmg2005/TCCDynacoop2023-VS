@@ -153,6 +153,7 @@
     <Compile Include="Plugins\EnvironmentOne\AccountManager.cs" />
     <Compile Include="Plugins\EnvironmentOne\OpportunityManager.cs" />
     <Compile Include="Plugins\EnvironmentOne\ProductManager.cs" />
+    <Compile Include="Plugins\EnvironmentTwo\ProductManager.cs" />
     <Compile Include="Plugins\PluginBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
