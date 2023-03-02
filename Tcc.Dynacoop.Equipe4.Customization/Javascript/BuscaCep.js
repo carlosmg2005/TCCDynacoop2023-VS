@@ -1,7 +1,7 @@
-﻿if (typeof (AlfaPeople) == "undefined") { AlfaPeople = {} }
-if (typeof (AlfaPeople.Endereco) == "undefined") { AlfaPeople.Endereco = {} }
+﻿if (typeof (Dynacoop) == "undefined") { Dynacoop = {} }
+if (typeof (Dynacoop.Endereco) == "undefined") { Dynacoop.Endereco = {} }
 
-AlfaPeople.Endereco = {
+Dynacoop.Endereco = {
 	OnCepChange: function (executionContext) {
 		var formContext = executionContext.getFormContext();
 
@@ -11,7 +11,8 @@ AlfaPeople.Endereco = {
 		var execute_dnc_BuscaCEPApi_Request = {
 			// Parameters
 			entity: { entityType: "account", id: id }, // entity
-			Cep: cep, // Edm.String
+
+			Cep: cep,
 
 			getMetadata: function () {
 				return {

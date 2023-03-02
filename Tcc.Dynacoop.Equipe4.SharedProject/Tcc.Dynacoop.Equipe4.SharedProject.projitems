@@ -11,4 +11,8 @@
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)VO\EnderecoVO.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Controller\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Model\" />
+  </ItemGroup>
 </Project>

@@ -1,15 +1,10 @@
 ﻿using Microsoft.Xrm.Sdk;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Tcc.Dynacoop.Equipe4.Plugin.DynacoopISV
 {
     public abstract class PluginCore : IPlugin
     {
-
         public IPluginExecutionContext Context { get; set; }
         public IOrganizationServiceFactory ServiceFactory { get; set; }
         public IOrganizationService Service { get; set; }

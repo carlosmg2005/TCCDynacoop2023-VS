@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Tcc.Dynacoop.Equipe4.SharedProject.VO
+﻿namespace Tcc.Dynacoop.Equipe4.SharedProject.VO
 {
-   public class EnderecoVO
+    public class EnderecoVO
     {
         public string cep { get; set; }
 
@@ -25,6 +21,5 @@ namespace Tcc.Dynacoop.Equipe4.SharedProject.VO
         public string ddd { get; set; }
          
         public string siafi { get; set; }
-    }
-       
+    }       
 }
