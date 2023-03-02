@@ -6,7 +6,6 @@ AlfaPeople.Endereco = {
 		var formContext = executionContext.getFormContext();
 
 		var id = Xrm.Page.data.entity.getId();
-
 		var cep = formContext.getAttribute("dnc_cep").getValue();
 
 		var execute_dnc_BuscaCEPApi_Request = {
