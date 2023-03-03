@@ -10,7 +10,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)Controller\AccountController.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controller\ContactController.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Account.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Contact.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Opportunity.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Product.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)VO\EnderecoVO.cs" />
