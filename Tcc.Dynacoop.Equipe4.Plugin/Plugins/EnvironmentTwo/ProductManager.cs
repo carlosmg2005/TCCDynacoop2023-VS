@@ -13,7 +13,7 @@ namespace Tcc.Dynacoop.Equipe4.Plugin.Plugins.EnvironmentTwo
                 Entity product = (Entity)this.Context.InputParameters["Target"];
                 if (product != null)
                 {
-                    throw new InvalidPluginExecutionException("Um produto não pode ser cadastrado diretamento nesse ambiente");
+                    throw new InvalidPluginExecutionException("Não é possivel realizar cadastro de Produto nesse ambiente!");
                 }
             }
         }

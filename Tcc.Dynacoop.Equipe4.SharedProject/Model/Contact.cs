@@ -1,10 +1,7 @@
 ﻿using Microsoft.Xrm.Sdk;
 using Microsoft.Xrm.Sdk.Query;
 using Microsoft.Xrm.Tooling.Connector;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace Tcc.Dynacoop.Equipe4.SharedProject.Model
 {
@@ -36,7 +33,5 @@ namespace Tcc.Dynacoop.Equipe4.SharedProject.Model
 
             return contact.Entities.FirstOrDefault();
         }
-
-
     }
 }
