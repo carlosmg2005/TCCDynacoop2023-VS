@@ -1,8 +1,5 @@
 ﻿using Microsoft.Xrm.Sdk;
 using Microsoft.Xrm.Tooling.Connector;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using Tcc.Dynacoop.Equipe4.SharedProject.Model;
 
 namespace Tcc.Dynacoop.Equipe4.SharedProject.Controller
@@ -11,15 +8,14 @@ namespace Tcc.Dynacoop.Equipe4.SharedProject.Controller
     {
         public IOrganizationService ServiceClient { get; set; }
 
-
         public Contact Contact { get; set; }
-
 
         public ContactController(IOrganizationService crmnServiceClient)
         {
             this.ServiceClient = crmnServiceClient;
             this.Contact = new Contact(ServiceClient);
         }
+
         public ContactController(CrmServiceClient crmnServiceClient)
         {
             this.ServiceClient = crmnServiceClient;

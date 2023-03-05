@@ -3,6 +3,7 @@ using System;
 using System.Security.Cryptography;
 using System.Text;
 using Tcc.Dynacoop.Equipe4.Plugin.DynacoopISV;
+using Tcc.Dynacoop.Equipe4.Plugin.Plugins.Connection;
 
 namespace Tcc.Dynacoop.Equipe4.Plugin.Plugins.EnvironmentOne
 {
@@ -10,14 +11,18 @@ namespace Tcc.Dynacoop.Equipe4.Plugin.Plugins.EnvironmentOne
     {
         public override void ExecutePlugin(IServiceProvider serviceProvider)
         {
+            ConnectionEnvironmentTwo ambienteDois = new ConnectionEnvironmentTwo();
+
             if (PluginBase.Validate(this.Context, PluginBase.MessageName.Create, PluginBase.Stage.PostOperation, PluginBase.Mode.Asynchronous))
             {
                 Entity opportunity = (Entity)this.Context.InputParameters["Target"];
                 if (opportunity.Contains("dnc_opportunitynumber") && opportunity["dnc_opportunitynumber"] != null)
                 {
                     opportunity["dnc_opportunitynumber"] = GeradorNumeroRandomico();
-
                     this.Service.Update(opportunity);
+
+                    opportunity["dnc_integracao"] = true;
+                    ambienteDois.GetService().Create(opportunity);
                 }
             }
         }
