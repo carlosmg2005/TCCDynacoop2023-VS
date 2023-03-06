@@ -46,13 +46,13 @@ namespace Tcc.Dynacoop.Equipe4.Plugin.Actions
                 throw new Exception("Endereco nao encontrado");
             }
 
-            Localidade.Set(context, enderecoVO.localidade);
-            Bairro.Set(context, enderecoVO.bairro);
-            DDD.Set(context, enderecoVO.ddd);
-            Uf.Set(context, enderecoVO.uf);
-            Logradouro.Set(context, enderecoVO.logradouro);
-            Complemento.Set(context, enderecoVO.complemento);
-            CodigoIBGE.Set(context, enderecoVO.ibge);
+            Localidade.Set(context, enderecoVO.Localidade);
+            Bairro.Set(context, enderecoVO.Bairro);
+            DDD.Set(context, enderecoVO.Ddd);
+            Uf.Set(context, enderecoVO.Uf);
+            Logradouro.Set(context, enderecoVO.Logradouro);
+            Complemento.Set(context, enderecoVO.Complemento);
+            CodigoIBGE.Set(context, enderecoVO.Ibge);
         }
     }
 }

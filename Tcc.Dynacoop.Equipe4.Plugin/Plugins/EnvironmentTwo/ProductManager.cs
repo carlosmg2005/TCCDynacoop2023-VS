@@ -8,12 +8,15 @@ namespace Tcc.Dynacoop.Equipe4.Plugin.Plugins.EnvironmentTwo
     {
         public override void ExecutePlugin(IServiceProvider serviceProvider)
         {
-            if (PluginBase.Validate(this.Context, PluginBase.MessageName.Create, PluginBase.Stage.PreValidation, PluginBase.Mode.Synchronous))
+            if (PluginBase.Validate(this.Context, PluginBase.MessageName.Create, PluginBase.Stage.PreOperation, PluginBase.Mode.Synchronous))
             {
                 Entity product = (Entity)this.Context.InputParameters["Target"];
-                if (product != null)
+                if (product.Contains("dnc_integracao"))
                 {
-                    throw new InvalidPluginExecutionException("Não é possivel realizar cadastro de Produto nesse ambiente!");
+                    if (product != null && product.GetAttributeValue<bool>("dnc_integracao") == false)
+                    {
+                        throw new InvalidPluginExecutionException("Não é possivel realizar cadastro de Produto nesse ambiente!");
+                    }
                 }
             }
         }

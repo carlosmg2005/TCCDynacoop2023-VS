@@ -1,5 +1,5 @@
 ﻿if (typeof (Dynacoop) == "undefined") { Dynacoop = {} }
-if (typeof (Dynacoop.Endereco) == "undefined") { Dynacoop.Endereco = {} }
+if (typeof (Dynacoop.Opportunity) == "undefined") { Dynacoop.Opportunity = {} }
 
 Dynacoop.Opportunity = {
     OnLoad: function (executionContext) {

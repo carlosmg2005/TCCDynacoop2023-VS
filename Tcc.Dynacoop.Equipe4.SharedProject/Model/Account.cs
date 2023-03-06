@@ -2,7 +2,6 @@
 using Microsoft.Xrm.Sdk.Query;
 using Microsoft.Xrm.Tooling.Connector;
 using System.Linq;
-using System;
 
 namespace Tcc.Dynacoop.Equipe4.SharedProject.Model
 {
@@ -24,15 +23,14 @@ namespace Tcc.Dynacoop.Equipe4.SharedProject.Model
             this.LogicalName = "account";
         }
 
-     
-
         public Entity GetAccountByCNPJ(string cnpj)
         {
             QueryExpression queryAccount = new QueryExpression(this.LogicalName);
             queryAccount.ColumnSet = new ColumnSet(true);
-            queryAccount.Criteria.AddCondition("dnc_cnpj", ConditionOperator.Equal, cnpj);
-            EntityCollection account = ServiceClient.RetrieveMultiple(queryAccount);
-            return account.Entities.FirstOrDefault();
+            queryAccount.Criteria.AddCondition(this.LogicalName, "dnc_cnpj", ConditionOperator.Equal, cnpj);
+            EntityCollection accounts = ServiceClient.RetrieveMultiple(queryAccount);
+
+            return accounts.Entities.FirstOrDefault();
         }
     }
 }

@@ -1,25 +1,37 @@
-﻿namespace Tcc.Dynacoop.Equipe4.SharedProject.VO
+﻿using Newtonsoft.Json;
+
+namespace Tcc.Dynacoop.Equipe4.SharedProject.VO
 {
     public class EnderecoVO
     {
-        public string cep { get; set; }
+        [JsonProperty("cep")]
+        public string Cep { get; set; }
 
-        public string logradouro { get; set; }
+        [JsonProperty("logradouro")]
+        public string Logradouro { get; set; }
 
-        public string complemento { get; set; }
+        [JsonProperty("complemento")]
+        public string Complemento { get; set; }
 
-        public string bairro { get; set; }
+        [JsonProperty("bairro")]
+        public string Bairro { get; set; }
 
-        public string localidade { get; set; }
+        [JsonProperty("localidade")]
+        public string Localidade { get; set; }
 
-        public string uf { get; set; }
+        [JsonProperty("uf")]
+        public string Uf { get; set; }
 
-        public string ibge { get; set; }
+        [JsonProperty("ibge")]
+        public string Ibge { get; set; }
 
-        public string gia { get; set; }
+        [JsonProperty("gia")]
+        public string Gia { get; set; }
 
-        public string ddd { get; set; }
-         
-        public string siafi { get; set; }
-    }       
+        [JsonProperty("ddd")]
+        public string Ddd { get; set; }
+
+        [JsonProperty("siafi")]
+        public string Siafi { get; set; }
+    }
 }
