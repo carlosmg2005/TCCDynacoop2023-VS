@@ -1,60 +1,37 @@
 ﻿using Microsoft.Xrm.Sdk;
 using System;
-using System.Security.Cryptography;
-using System.Text;
 using Tcc.Dynacoop.Equipe4.Plugin.DynacoopISV;
 using Tcc.Dynacoop.Equipe4.Plugin.Plugins.Connection;
+using Tcc.Dynacoop.Equipe4.SharedProject.Controller;
 
 namespace Tcc.Dynacoop.Equipe4.Plugin.Plugins.EnvironmentOne
 {
     public class OpportunityManager : PluginCore
     {
+        EnvironmentConnectionTwo ambienteDois = new EnvironmentConnectionTwo();
+
         public override void ExecutePlugin(IServiceProvider serviceProvider)
         {
-            ConnectionEnvironmentTwo ambienteDois = new ConnectionEnvironmentTwo();
-
-            if (PluginBase.Validate(this.Context, PluginBase.MessageName.Create, PluginBase.Stage.PostOperation, PluginBase.Mode.Asynchronous))
+            OpportunityController opportunityController = new OpportunityController(this.Service);
+            if (PluginBase.Validate(this.Context, PluginBase.MessageName.Create, PluginBase.Stage.PreOperation, PluginBase.Mode.Synchronous))
             {
                 Entity opportunity = (Entity)this.Context.InputParameters["Target"];
                 if (opportunity.Contains("dnc_opportunitynumber") && opportunity["dnc_opportunitynumber"] != null)
                 {
-                    opportunity["dnc_opportunitynumber"] = GeradorNumeroRandomico();
-                    this.Service.Update(opportunity);
-
-                    opportunity["dnc_integracao"] = true;
-                    ambienteDois.GetService().Create(opportunity);
+                    var idAlfa = opportunity.GetAttributeValue<string>("dnc_opportunitynumber");
+                    var oppFound = opportunityController.VerificaDuplicidade(idAlfa);
+                    if (oppFound != null)
+                    {
+                        throw new InvalidPluginExecutionException("DUPLICIDADE: " +
+                                                                  "Não é possivel cadastrar um registro duplicado no sistema.");
+                    }
+                    else
+                    {
+                        opportunity["dnc_integracao"] = true;
+                        ambienteDois.GetService().Create(opportunity);
+                    }
                 }
             }
-        }
-
-        public string GeradorNumeroRandomico()
-        {
-            Random rd = new Random();
-            int num = rd.Next(99999);
-
-            Guid newGuid = Guid.NewGuid();
-
-            var sha256 = SHA256.Create();
-            var secretBytes = Encoding.UTF8.GetBytes(newGuid.ToString());
-            var secretHash = sha256.ComputeHash(secretBytes);
-
-            foreach (var item in secretHash)
-            {
-                num += item;
-            }
-
-            var numTemp = string.Empty;
-            if (num.ToString().Length > 5)
-            {
-                numTemp = num.ToString().Substring(5);
-            }
-            else
-            {
-                numTemp = num.ToString();
-            }
-            var numfinal = $"OPP-{numTemp}-A1A2";
-
-            return numfinal;
         }
     }
 }

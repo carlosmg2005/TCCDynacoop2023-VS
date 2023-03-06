@@ -16,7 +16,7 @@ namespace Tcc.Dynacoop.Equipe4.SharedProject.Model
             this.ServiceClient = crmServiceClient;
             this.LogicalName = "contact";
 
-        }  
+        }
         public Contact(CrmServiceClient crmServiceClient)
         {
             this.ServiceClient = crmServiceClient;
@@ -26,12 +26,12 @@ namespace Tcc.Dynacoop.Equipe4.SharedProject.Model
 
         public Entity GetContactByCPF(string contactCPF)
         {
-            QueryExpression busca = new QueryExpression(LogicalName);
-            busca.ColumnSet.AddColumn("dnc_cpf");
-            busca.Criteria.AddCondition("dnc_cpf", ConditionOperator.Equal, contactCPF);
-            EntityCollection contact = ServiceClient.RetrieveMultiple(busca);
+            QueryExpression queryExpression = new QueryExpression(LogicalName);
+            queryExpression.ColumnSet.AddColumn("dnc_cpf");
+            queryExpression.Criteria.AddCondition(this.LogicalName, "dnc_cpf", ConditionOperator.Equal, contactCPF);
+            EntityCollection contacts = ServiceClient.RetrieveMultiple(queryExpression);
 
-            return contact.Entities.FirstOrDefault();
+            return contacts.Entities.FirstOrDefault();
         }
     }
 }

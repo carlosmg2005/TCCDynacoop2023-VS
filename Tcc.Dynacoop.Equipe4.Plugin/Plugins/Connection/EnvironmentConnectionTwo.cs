@@ -3,7 +3,7 @@ using Microsoft.Xrm.Tooling.Connector;
 
 namespace Tcc.Dynacoop.Equipe4.Plugin.Plugins.Connection
 {
-    public class ConnectionEnvironmentTwo
+    public class EnvironmentConnectionTwo
     {
         public IOrganizationService GetService()
         {

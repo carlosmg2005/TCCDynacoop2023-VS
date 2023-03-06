@@ -7,7 +7,7 @@ namespace Tcc.Dynacoop.Equipe4.Plugin.Plugins.EnvironmentOne
 {
     public class ProductManager : PluginCore
     {
-        ConnectionEnvironmentTwo ambienteDois = new ConnectionEnvironmentTwo();
+        EnvironmentConnectionTwo ambienteDois = new EnvironmentConnectionTwo();
         public override void ExecutePlugin(IServiceProvider serviceProvider)
         {
             ClonaProdutoCriadoParaAmbiente2();
@@ -22,6 +22,7 @@ namespace Tcc.Dynacoop.Equipe4.Plugin.Plugins.EnvironmentOne
                     Entity product = (Entity)this.Context.InputParameters["Target"];
                     if (product != null)
                     {
+                        product["dnc_integracao"] = true;
                         ambienteDois.GetService().Create(product);
                     }
                     else

@@ -46,6 +46,7 @@
   <ItemGroup>
     <Content Include="Javascript\BloqueiaEdicao.js" />
     <Content Include="Javascript\BuscaCep.js" />
+    <Content Include="Javascript\AlteraFormatoNomeDaConta.js" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

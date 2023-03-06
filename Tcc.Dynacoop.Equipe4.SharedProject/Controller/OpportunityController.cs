@@ -26,5 +26,10 @@ namespace Tcc.Dynacoop.Equipe4.SharedProject.Controller
         {
             return Opportunity.GetAllOpportunitys();
         }
+
+        public Entity VerificaDuplicidade(string idAlfa)
+        {
+            return Opportunity.VerificaDuplicidade(idAlfa);
+        }
     }
 }

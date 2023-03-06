@@ -149,7 +149,7 @@
     <Compile Include="Actions\Request\RequestViaCep.cs" />
     <Compile Include="DynacoopISV\ActionCore.cs" />
     <Compile Include="DynacoopISV\PluginCore.cs" />
-    <Compile Include="Plugins\Connection\ConnectionEnvironmentTwo.cs" />
+    <Compile Include="Plugins\Connection\EnvironmentConnectionTwo.cs" />
     <Compile Include="Plugins\EnvironmentOne\AccountManager.cs" />
     <Compile Include="Plugins\EnvironmentOne\ContactManager.cs" />
     <Compile Include="Plugins\EnvironmentOne\OpportunityManager.cs" />
