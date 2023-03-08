@@ -1,7 +1,6 @@
-﻿namespace Tcc.Dynacoop.Equipe4.Plugin.Actions.Request
+﻿namespace Dynacoop.Logistics.Actions.Request
 {
     public class RequestViaCep
-    {
-       
+    {   
     }
 }

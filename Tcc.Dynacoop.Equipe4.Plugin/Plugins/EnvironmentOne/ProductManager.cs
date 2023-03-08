@@ -1,9 +1,9 @@
-﻿using Microsoft.Xrm.Sdk;
+﻿using Dynacoop.Logistics.Plugin.DynacoopISV;
+using Dynacoop.Logistics.Plugin.Plugins.Connection;
+using Microsoft.Xrm.Sdk;
 using System;
-using Tcc.Dynacoop.Equipe4.Plugin.DynacoopISV;
-using Tcc.Dynacoop.Equipe4.Plugin.Plugins.Connection;
 
-namespace Tcc.Dynacoop.Equipe4.Plugin.Plugins.EnvironmentOne
+namespace Dynacoop.Logistics.Plugin.Plugins.EnvironmentOne
 {
     public class ProductManager : PluginCore
     {

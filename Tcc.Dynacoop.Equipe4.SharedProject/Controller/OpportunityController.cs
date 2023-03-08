@@ -1,8 +1,8 @@
 ﻿using Microsoft.Xrm.Sdk;
 using Microsoft.Xrm.Tooling.Connector;
-using Tcc.Dynacoop.Equipe4.SharedProject.Model;
+using Dynacoop.Logistics.SharedProject.Model;
 
-namespace Tcc.Dynacoop.Equipe4.SharedProject.Controller
+namespace Dynacoop.Logistics.SharedProject.Controller
 {
     public class OpportunityController
     {
@@ -27,9 +27,9 @@ namespace Tcc.Dynacoop.Equipe4.SharedProject.Controller
             return Opportunity.GetAllOpportunitys();
         }
 
-        public Entity VerificaDuplicidade(string idAlfa)
+        public Entity CheckForDuplicity(string idAlfa)
         {
-            return Opportunity.VerificaDuplicidade(idAlfa);
+            return Opportunity.CheckForDuplicity(idAlfa);
         }
     }
 }

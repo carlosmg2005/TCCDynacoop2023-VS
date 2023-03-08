@@ -3,7 +3,7 @@ using Microsoft.Xrm.Sdk.Query;
 using Microsoft.Xrm.Tooling.Connector;
 using System.Linq;
 
-namespace Tcc.Dynacoop.Equipe4.SharedProject.Model
+namespace Dynacoop.Logistics.SharedProject.Model
 {
     public class Contact
     {

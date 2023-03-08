@@ -1,8 +1,8 @@
 ﻿using Microsoft.Xrm.Sdk;
 using Microsoft.Xrm.Tooling.Connector;
-using Tcc.Dynacoop.Equipe4.SharedProject.Model;
+using Dynacoop.Logistics.SharedProject.Model;
 
-namespace Tcc.Dynacoop.Equipe4.SharedProject.Controller
+namespace Dynacoop.Logistics.SharedProject.Controller
 {
     public class AccountController
     {

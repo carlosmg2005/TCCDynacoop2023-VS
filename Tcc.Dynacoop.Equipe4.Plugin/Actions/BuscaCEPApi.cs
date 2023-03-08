@@ -1,12 +1,12 @@
-﻿using Microsoft.Xrm.Sdk.Workflow;
+﻿using Dynacoop.Logistics.Plugin.DynacoopISV;
+using Microsoft.Xrm.Sdk.Workflow;
 using Newtonsoft.Json;
 using RestSharp;
 using System;
 using System.Activities;
-using Tcc.Dynacoop.Equipe4.Plugin.DynacoopISV;
-using Tcc.Dynacoop.Equipe4.SharedProject.VO;
+using Dynacoop.Logistics.SharedProject.VO;
 
-namespace Tcc.Dynacoop.Equipe4.Plugin.Actions
+namespace Dynacoop.Logistics.Plugin.Actions
 {
     public class BuscaCEPApi : ActionCore
     {

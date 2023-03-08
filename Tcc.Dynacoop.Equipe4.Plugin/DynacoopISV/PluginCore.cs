@@ -1,7 +1,7 @@
 ﻿using Microsoft.Xrm.Sdk;
 using System;
 
-namespace Tcc.Dynacoop.Equipe4.Plugin.DynacoopISV
+namespace Dynacoop.Logistics.Plugin.DynacoopISV
 {
     public abstract class PluginCore : IPlugin
     {

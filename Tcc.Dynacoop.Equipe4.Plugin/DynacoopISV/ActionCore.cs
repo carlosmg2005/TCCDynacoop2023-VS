@@ -2,7 +2,7 @@
 using Microsoft.Xrm.Sdk.Workflow;
 using System.Activities;
 
-namespace Tcc.Dynacoop.Equipe4.Plugin.DynacoopISV
+namespace Dynacoop.Logistics.Plugin.DynacoopISV
 {
     public abstract class ActionCore : CodeActivity
     {

@@ -5,27 +5,24 @@ Dynacoop.Endereco = {
     OnCepChange: function (executionContext) {
         var formContext = executionContext.getFormContext();
 
-        var id = Xrm.Page.data.entity.getId();
         var cep = formContext.getAttribute("dnc_cep").getValue();
-        var execute_dnc_BuscaCEPApi_Request = {
-            // Parameters			
-            entity: { entityType: "account", id: id }, // entity
 
-            Cep: cep,
+        var execute_dnc_BuscarCepAPI_Request = {
+            // Parameters
+            Cep: cep, // Edm.String
 
             getMetadata: function () {
                 return {
-                    boundParameter: "entity",
+                    boundParameter: null,
                     parameterTypes: {
-                        entity: { typeName: "mscrm.account", structuralProperty: 5 },
                         Cep: { typeName: "Edm.String", structuralProperty: 1 }
                     },
-                    operationType: 0, operationName: "dnc_BuscaCEPApi"
+                    operationType: 0, operationName: "dnc_BuscarCepAPI"
                 };
             }
         };
 
-        Xrm.WebApi.execute(execute_dnc_BuscaCEPApi_Request).then(
+        Xrm.WebApi.execute(execute_dnc_BuscarCepAPI_Request).then(
             function success(response) {
                 if (response.ok) { return response.json(); }
             }
