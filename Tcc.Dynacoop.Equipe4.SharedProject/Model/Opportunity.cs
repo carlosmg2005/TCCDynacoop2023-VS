@@ -3,7 +3,7 @@ using Microsoft.Xrm.Sdk.Query;
 using Microsoft.Xrm.Tooling.Connector;
 using System.Linq;
 
-namespace Tcc.Dynacoop.Equipe4.SharedProject.Model
+namespace Dynacoop.Logistics.SharedProject.Model
 {
     public class Opportunity
     {
@@ -37,7 +37,7 @@ namespace Tcc.Dynacoop.Equipe4.SharedProject.Model
             return null;
         }
 
-        public Entity VerificaDuplicidade(string idAlfa)
+        public Entity CheckForDuplicity(string idAlfa)
         {
             QueryExpression queryExpression = new QueryExpression(this.LogicalName);
             queryExpression.ColumnSet.AddColumn("dnc_opportunitynumber");

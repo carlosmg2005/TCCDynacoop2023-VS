@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33403.182
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tcc.Dynacoop.Equipe4.Plugin", "Tcc.Dynacoop.Equipe4.Plugin\Tcc.Dynacoop.Equipe4.Plugin.csproj", "{27B54BE2-4738-441E-B5E7-D60C8DC28CB2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dynacoop.Logistics.Plugin", "Tcc.Dynacoop.Equipe4.Plugin\Dynacoop.Logistics.Plugin.csproj", "{27B54BE2-4738-441E-B5E7-D60C8DC28CB2}"
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Tcc.Dynacoop.Equipe4.SharedProject", "Tcc.Dynacoop.Equipe4.SharedProject\Tcc.Dynacoop.Equipe4.SharedProject.shproj", "{E88D578D-020A-44ED-BF1D-9C8C37D680D1}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Dynacoop.Logistics.SharedProject", "Tcc.Dynacoop.Equipe4.SharedProject\Dynacoop.Logistics.SharedProject.shproj", "{E88D578D-020A-44ED-BF1D-9C8C37D680D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tcc.Dynacoop.Equipe4.Customization", "Tcc.Dynacoop.Equipe4.Customization\Tcc.Dynacoop.Equipe4.Customization.csproj", "{281F51C2-2A03-4B58-A9A9-C5942B6A471C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dynacoop.Logistics.Customization", "Tcc.Dynacoop.Equipe4.Customization\Dynacoop.Logistics.Customization.csproj", "{281F51C2-2A03-4B58-A9A9-C5942B6A471C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp-Testes", "ConsoleApp-Testes\ConsoleApp-Testes.csproj", "{25396C6D-1428-4E26-B071-303EA26A4433}"
 EndProject

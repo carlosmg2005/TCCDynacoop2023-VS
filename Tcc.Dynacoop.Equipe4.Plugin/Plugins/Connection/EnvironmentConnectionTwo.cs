@@ -1,7 +1,7 @@
 ﻿using Microsoft.Xrm.Sdk;
 using Microsoft.Xrm.Tooling.Connector;
 
-namespace Tcc.Dynacoop.Equipe4.Plugin.Plugins.Connection
+namespace Dynacoop.Logistics.Plugin.Plugins.Connection
 {
     public class EnvironmentConnectionTwo
     {

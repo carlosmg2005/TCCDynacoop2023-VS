@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace Tcc.Dynacoop.Equipe4.SharedProject.VO
+namespace Dynacoop.Logistics.SharedProject.VO
 {
     public class EnderecoVO
     {

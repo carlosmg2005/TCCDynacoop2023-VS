@@ -57,5 +57,5 @@ Dynacoop.Contact = {
         }
         alert("CPF Válido")
         return true
-    } 
+    },
 }

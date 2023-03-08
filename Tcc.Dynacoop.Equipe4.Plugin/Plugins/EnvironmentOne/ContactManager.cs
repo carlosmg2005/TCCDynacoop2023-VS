@@ -1,12 +1,15 @@
 ﻿using Microsoft.Xrm.Sdk;
 using System;
-using Tcc.Dynacoop.Equipe4.Plugin.DynacoopISV;
-using Tcc.Dynacoop.Equipe4.SharedProject.Controller;
+using Dynacoop.Logistics.Plugin.DynacoopISV;
+using Dynacoop.Logistics.SharedProject.Controller;
+using Dynacoop.Logistics.Plugin.Plugins.Connection;
 
-namespace Tcc.Dynacoop.Equipe4.Plugin.Plugins.EnvironmentOne
+namespace Dynacoop.Logistics.Plugin.Plugins.EnvironmentOne
 {
     public class ContactManager : PluginCore
     {
+        EnvironmentConnectionTwo ambienteDois = new EnvironmentConnectionTwo();
+
         public override void ExecutePlugin(IServiceProvider serviceProvider)
         {
             if (PluginBase.Validate(this.Context, PluginBase.MessageName.Create, PluginBase.Stage.PreValidation, PluginBase.Mode.Synchronous)

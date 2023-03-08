@@ -1,9 +1,9 @@
-﻿using Microsoft.Xrm.Sdk;
+﻿using Dynacoop.Logistics.Plugin.DynacoopISV;
+using Microsoft.Xrm.Sdk;
 using System;
-using Tcc.Dynacoop.Equipe4.Plugin.DynacoopISV;
-using Tcc.Dynacoop.Equipe4.SharedProject.Controller;
+using Dynacoop.Logistics.SharedProject.Controller;
 
-namespace Tcc.Dynacoop.Equipe4.Plugin.Plugins.EnvironmentOne
+namespace Dynacoop.Logistics.Plugin.Plugins.EnvironmentOne
 {
     public class AccountManager : PluginCore
     {

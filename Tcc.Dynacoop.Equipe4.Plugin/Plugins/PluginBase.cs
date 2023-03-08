@@ -1,6 +1,6 @@
 ﻿using Microsoft.Xrm.Sdk;
 
-namespace Tcc.Dynacoop.Equipe4.Plugin.Plugins
+namespace Dynacoop.Logistics.Plugin.Plugins
 {
     public static class PluginBase
     {
