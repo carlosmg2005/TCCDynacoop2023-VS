@@ -20,7 +20,7 @@ namespace Dynacoop.Logistics.Plugin.Plugins.EnvironmentOne
                 if (opportunity.Contains("dnc_opportunitynumber") && opportunity["dnc_opportunitynumber"] != null)
                 {
                     var idAlfa = opportunity.GetAttributeValue<string>("dnc_opportunitynumber");
-                    var oppFound = opportunityController.VerificaDuplicidade(idAlfa);
+                    var oppFound = opportunityController.CheckForDuplicity(idAlfa);
                     if (oppFound != null)
                     {
                         throw new InvalidPluginExecutionException("DUPLICIDADE: " +
