@@ -15,7 +15,8 @@ namespace Dynacoop.Logistics.Plugin.Plugins.EnvironmentTwo
                 {
                     if (product != null && product.GetAttributeValue<bool>("dnc_integracao") == false)
                     {
-                        throw new InvalidPluginExecutionException("Não é possivel realizar cadastro de Produto nesse ambiente!");
+                        throw new InvalidPluginExecutionException("Não é possivel realizar o cadastro de Produto diretamente nesse ambiente. " +
+                                                                  "O cadastro de produto é somente permitido no ambiente 1");
                     }
                 }
             }

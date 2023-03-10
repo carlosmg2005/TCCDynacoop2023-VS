@@ -17,12 +17,6 @@ namespace Dynacoop.Logistics.SharedProject.Model
             this.LogicalName = "opportunity";
         }
 
-        public Opportunity(CrmServiceClient crmServiceClient)
-        {
-            this.ServiceClient = crmServiceClient;
-            this.LogicalName = "opportunity";
-        }
-
         public EntityCollection GetAllOpportunitys()
         {
             QueryExpression queryExpression = new QueryExpression(this.LogicalName);

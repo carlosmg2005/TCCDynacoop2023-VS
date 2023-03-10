@@ -1,6 +1,5 @@
-﻿using Microsoft.Xrm.Sdk;
-using Microsoft.Xrm.Tooling.Connector;
-using Dynacoop.Logistics.SharedProject.Model;
+﻿using Dynacoop.Logistics.SharedProject.Model;
+using Microsoft.Xrm.Sdk;
 
 namespace Dynacoop.Logistics.SharedProject.Controller
 {
@@ -16,15 +15,14 @@ namespace Dynacoop.Logistics.SharedProject.Controller
             this.Contact = new Contact(ServiceClient);
         }
 
-        public ContactController(CrmServiceClient crmnServiceClient)
-        {
-            this.ServiceClient = crmnServiceClient;
-            this.Contact = new Contact(ServiceClient);
-        }
-
         public Entity GetContactByCPF(string cpf)
         {
             return Contact.GetContactByCPF(cpf);
+        }
+
+        public void AddContact(Entity opportunity)
+        {
+            Contact.AddContact(opportunity);
         }
     }
 }

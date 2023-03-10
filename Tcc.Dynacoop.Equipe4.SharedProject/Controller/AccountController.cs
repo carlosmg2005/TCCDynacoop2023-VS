@@ -16,15 +16,15 @@ namespace Dynacoop.Logistics.SharedProject.Controller
             this.Account = new Account(ServiceClient);
         }
 
-        public AccountController(CrmServiceClient crmnServiceClient)
-        {
-            this.ServiceClient = crmnServiceClient;
-            this.Account = new Account(ServiceClient);
-        }
-
         public Entity GetAccountByCnpj(string cep)
         {
             return Account.GetAccountByCNPJ(cep);
         }
+         
+        public void AddAccount(Entity opportunity)
+        {
+            Account.AddAccount(opportunity);
+        }
+
     }
 }
