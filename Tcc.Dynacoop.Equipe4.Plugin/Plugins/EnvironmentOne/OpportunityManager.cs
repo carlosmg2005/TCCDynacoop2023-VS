@@ -12,10 +12,15 @@ namespace Dynacoop.Logistics.Plugin.Plugins.EnvironmentOne
 
         public override void ExecutePlugin(IServiceProvider serviceProvider)
         {
+            AccountController accountController = new AccountController(this.Service);
+            ContactController contactController = new ContactController(this.Service);
             OpportunityController opportunityController = new OpportunityController(this.Service);
+
             if (PluginBase.Validate(this.Context, PluginBase.MessageName.Create, PluginBase.Stage.PreOperation, PluginBase.Mode.Synchronous))
             {
                 Entity opportunity = (Entity)this.Context.InputParameters["Target"];
+                accountController.AddAccount(opportunity);
+                contactController.AddContact(opportunity);
 
                 if (opportunity.Contains("dnc_opportunitynumber") && opportunity["dnc_opportunitynumber"] != null)
                 {

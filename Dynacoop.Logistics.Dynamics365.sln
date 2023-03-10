@@ -9,7 +9,7 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Dynacoop.Logistics.SharedPr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dynacoop.Logistics.Customization", "Tcc.Dynacoop.Equipe4.Customization\Dynacoop.Logistics.Customization.csproj", "{281F51C2-2A03-4B58-A9A9-C5942B6A471C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp-Testes", "ConsoleApp-Testes\ConsoleApp-Testes.csproj", "{25396C6D-1428-4E26-B071-303EA26A4433}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication.Testes", "ConsoleApplication.Testes\ConsoleApplication.Testes.csproj", "{AAEC1191-23B1-473E-9289-A28C123C22C2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,10 +25,10 @@ Global
 		{281F51C2-2A03-4B58-A9A9-C5942B6A471C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{281F51C2-2A03-4B58-A9A9-C5942B6A471C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{281F51C2-2A03-4B58-A9A9-C5942B6A471C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{25396C6D-1428-4E26-B071-303EA26A4433}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{25396C6D-1428-4E26-B071-303EA26A4433}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{25396C6D-1428-4E26-B071-303EA26A4433}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{25396C6D-1428-4E26-B071-303EA26A4433}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAEC1191-23B1-473E-9289-A28C123C22C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAEC1191-23B1-473E-9289-A28C123C22C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAEC1191-23B1-473E-9289-A28C123C22C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAEC1191-23B1-473E-9289-A28C123C22C2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

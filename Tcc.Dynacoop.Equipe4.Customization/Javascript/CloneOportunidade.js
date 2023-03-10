@@ -24,6 +24,7 @@ Dynacoop.CloneOpportunity = {
 
 		Xrm.WebApi.execute(execute_dnc_CloneOportunidade_Request).then(
 			function success(response) {
+				debugger;
 				if (response.ok)
 				{
 					Dynacoop.CloneOpportunity.DynamicsAlert("Oportunidade clonada com sucesso", "Sucesso");
@@ -31,6 +32,7 @@ Dynacoop.CloneOpportunity = {
 				}
 			}
 		).catch(function (error) {
+			debugger;
 			console.log(error.message);
 		});
 	},

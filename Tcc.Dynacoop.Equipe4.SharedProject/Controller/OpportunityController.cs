@@ -1,6 +1,5 @@
-﻿using Microsoft.Xrm.Sdk;
-using Microsoft.Xrm.Tooling.Connector;
-using Dynacoop.Logistics.SharedProject.Model;
+﻿using Dynacoop.Logistics.SharedProject.Model;
+using Microsoft.Xrm.Sdk;
 
 namespace Dynacoop.Logistics.SharedProject.Controller
 {
@@ -11,12 +10,6 @@ namespace Dynacoop.Logistics.SharedProject.Controller
         public Opportunity Opportunity { get; set; }
 
         public OpportunityController(IOrganizationService crmnServiceClient)
-        {
-            this.ServiceClient = crmnServiceClient;
-            this.Opportunity = new Opportunity(ServiceClient);
-        }
-
-        public OpportunityController(CrmServiceClient crmnServiceClient)
         {
             this.ServiceClient = crmnServiceClient;
             this.Opportunity = new Opportunity(ServiceClient);
