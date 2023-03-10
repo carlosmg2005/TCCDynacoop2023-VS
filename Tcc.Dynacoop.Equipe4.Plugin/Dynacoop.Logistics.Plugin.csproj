@@ -147,7 +147,6 @@
   <ItemGroup>
     <Compile Include="Actions\BuscaCEPApi.cs" />
     <Compile Include="Actions\CloneOportunidade.cs" />
-    <Compile Include="Actions\Request\RequestViaCep.cs" />
     <Compile Include="DynacoopISV\ActionCore.cs" />
     <Compile Include="DynacoopISV\PluginCore.cs" />
     <Compile Include="Plugins\Connection\EnvironmentConnectionTwo.cs" />

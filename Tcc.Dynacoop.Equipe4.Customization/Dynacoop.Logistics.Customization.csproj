@@ -41,12 +41,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Javascript\BloqueiaEdicaoCNPJ.js" />
+    <Content Include="Javascript\BloqueiaEdicaoCPF.js" />
     <Content Include="Javascript\CloneOportunidade.js" />
     <Content Include="Javascript\ValidaCnpj.js" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Javascript\BloqueiaEdicao.js" />
+    <Content Include="Javascript\BloqueiaEdicaoDeOportunidade.js" />
     <Content Include="Javascript\BuscaCep.js" />
     <Content Include="Javascript\AlteraFormatoNomeDaConta.js" />
     <Content Include="Javascript\ValidaCpf.js" />
