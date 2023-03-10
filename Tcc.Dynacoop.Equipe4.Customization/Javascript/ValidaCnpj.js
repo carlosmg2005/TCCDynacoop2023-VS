@@ -4,9 +4,8 @@ if (typeof (Dynacoop.Validacao) == "undefined") { Dynacoop.Validacao = {} }
 Dynacoop.Validacao = {
     CNPJOnChange: function (executionContext) {
         var formContext = executionContext.getFormContext();
-
         var cnpj = formContext.getAttribute("dnc_cnpj").getValue();
-
+        
         if (cnpj != null) {
             if (cnpj.length == 14) {
                 var formattedCNPJ = cnpj.replace(/^(\d{2})(\d{3})(\d{3})(\d{4})(\d{2})/, "$1.$2.$3/$4-$5");
